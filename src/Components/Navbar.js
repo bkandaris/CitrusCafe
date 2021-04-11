@@ -29,7 +29,7 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
 
 `
 
