@@ -16,14 +16,14 @@ const About = () => {
                     <Button>Read More</Button>
                 </Section1>
 
-                <section>
-                    <div>
+                <Section2>
+                    <S2left>
                         <Header>Title</Header>
                         <Paragraphs>Here is some information about some random title. It is undetermined but I know this content is going to be fire no doubt! Looking at all this food makes me perpetually hungry!</Paragraphs>
                         <Button>VIEW MENU</Button>
-                    </div>
-                    <img src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="more food"/>
-                </section>
+                    </S2left>
+                    <S2Img src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="more food"/>
+                </Section2>
                 <span></span>
                 <section>
                     <img src={"https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"} alt="cutting board and food"/>
@@ -75,9 +75,24 @@ const Button = styled.button`
 `
 
 const Section1 = styled.div`
-    padding: 1em;
+    padding: 0;
     margin-top: 1.5rem;
 `
+
+const Section2 = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+const S2left = styled.div`
+    width: 49%;
+`
+
+const S2Img = styled.img`
+    max-width: 450px;
+
+`
+
 
 const HorizontalLine = styled.div`
     background-color: #F78B22;
