@@ -27,7 +27,7 @@ const ReviewSlider = () => {
             setSlider(0)
         }
         console.log(slider)
-    }, 10000)
+    }, 5000)
 
     return (
         <Wrapper>
@@ -64,6 +64,7 @@ export default ReviewSlider;
 const Wrapper = styled.div`
     width: 95%;
     margin: 0 auto;
+    margin-top: 150px;
 `
 
 const HorizontalLine = styled.div`

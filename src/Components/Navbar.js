@@ -34,7 +34,7 @@ const Nav = styled.nav`
 `
 
 const Img = styled.img`
-    height: 80px;
+    height: 115px;
 `
 
 const Div = styled.div`

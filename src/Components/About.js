@@ -26,14 +26,13 @@ const About = () => {
                 </Section2>
                 <OrangeVert></OrangeVert>
                 <Section3>
-                    <SecondaryImages src={"https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"} alt="cutting board and food"/>
+                    <SecondaryImages src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="cutting board and food"/>
                     <SecondaryText>
                         <Header>Title</Header>
                         <Paragraphs>Some more amazing content that will blow your socks off. This website is going to be straight fire homie. All of these food pics will drive sales up!</Paragraphs>
                         <Button>View Menu</Button>
                     </SecondaryText>
                 </Section3>
-                <OrangeVert></OrangeVert>
             </SecondaryWrapper>
             <ReviewSlider />
         </Wrapper>
@@ -43,12 +42,12 @@ const About = () => {
 export default About;
 // Main and Secondary Wrapper
 const Wrapper = styled.div`
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
 `
 const SecondaryWrapper = styled.div`
     width: 95%;
-    margin: 0 auto;
+    margin: 100px auto;
 `    
 
 const HeaderImg = styled.img`
@@ -58,6 +57,7 @@ const HeaderImg = styled.img`
 `
 
 const Header = styled.h3`
+    font-size: 36px;
     font-weight: 700;
     margin: 1rem 0;
 `
@@ -78,30 +78,29 @@ const Button = styled.button`
 
 const Section1 = styled.div`
     padding: 0;
-    margin-top: 1.5rem;
+    margin-top: 100px;
     margin-bottom: 2.5rem;
 `
 
 const Section2 = styled.div`
-    height: 400px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 `
 
 const Section3 = styled.div`
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between
 `
 const SecondaryText = styled.div`
-    width: 48%;
+    width: 35%;
 `
 
 const SecondaryImages = styled.img`
     max-height: 300px;
-    max-width: 50%;
+    max-width: 60%;
     max-height: 100%;
 `
 
