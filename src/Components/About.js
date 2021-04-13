@@ -17,22 +17,22 @@ const About = () => {
                 </Section1>
 
                 <Section2>
-                    <S2left>
+                    <SecondaryText>
                         <Header>Title</Header>
                         <Paragraphs>Here is some information about some random title. It is undetermined but I know this content is going to be fire no doubt! Looking at all this food makes me perpetually hungry!</Paragraphs>
                         <Button>VIEW MENU</Button>
-                    </S2left>
-                    <S2Img src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="more food"/>
+                    </SecondaryText>
+                    <SecondaryImages src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="more food"/>
                 </Section2>
                 <span></span>
-                <section>
-                    <img src={"https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"} alt="cutting board and food"/>
-                    <div>
+                <Section3>
+                    <SecondaryImages src={"https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"} alt="cutting board and food"/>
+                    <SecondaryText>
                         <Header>Title</Header>
                         <Paragraphs>Some more amazing content that will blow your socks off. This website is going to be straight fire homie. All of these food pics will drive sales up!</Paragraphs>
                         <Button>View Menu</Button>
-                    </div>
-                </section>
+                    </SecondaryText>
+                </Section3>
             </SecondaryWrapper>
         </Wrapper>
     )
@@ -47,8 +47,8 @@ const Wrapper = styled.div`
 const SecondaryWrapper = styled.div`
     width: 95%;
     margin: 0 auto;
-`
-// Images
+`    
+
 const HeaderImg = styled.img`
     min-height: 100%;
     min-width: 100%;
@@ -77,20 +77,30 @@ const Button = styled.button`
 const Section1 = styled.div`
     padding: 0;
     margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
 `
 
 const Section2 = styled.div`
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 `
-const S2left = styled.div`
-    width: 49%;
+
+const Section3 = styled.div`
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+`
+const SecondaryText = styled.div`
+    width: 48%;
 `
 
-const S2Img = styled.img`
-    max-width: 450px;
-
+const SecondaryImages = styled.img`
+    max-height: 300px;
+    max-width: 50%;
+    max-height: 100%;
 `
 
 
