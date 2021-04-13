@@ -1,6 +1,6 @@
-import { ButtonGroup } from '@material-ui/core';
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import ReviewSlider from './ReviewSlider';
 
 const About = () => {
     return (
@@ -15,7 +15,7 @@ const About = () => {
                     <Paragraphs>At Citrus Cafe you will enjoy our great family atmosphere while you eat your freshly made meal. Our family friendly restaurant combines great food with good fun to give your family the outing you all need. We have several...</Paragraphs>
                     <Button>Read More</Button>
                 </Section1>
-
+                
                 <Section2>
                     <SecondaryText>
                         <Header>Title</Header>
@@ -24,7 +24,7 @@ const About = () => {
                     </SecondaryText>
                     <SecondaryImages src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="more food"/>
                 </Section2>
-                <span></span>
+                <OrangeVert></OrangeVert>
                 <Section3>
                     <SecondaryImages src={"https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"} alt="cutting board and food"/>
                     <SecondaryText>
@@ -33,7 +33,9 @@ const About = () => {
                         <Button>View Menu</Button>
                     </SecondaryText>
                 </Section3>
+                <OrangeVert></OrangeVert>
             </SecondaryWrapper>
+            <ReviewSlider />
         </Wrapper>
     )
 }
@@ -114,4 +116,11 @@ const HorizontalLine = styled.div`
 const AboutUsHeader = styled.div`
     display: flex;
     align-items: center;
+`
+
+const OrangeVert = styled.div`
+    height: 188px;
+    width: 4px;
+    background-color: #F78B22;
+    margin: 1.5rem auto;
 `
