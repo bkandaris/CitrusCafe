@@ -108,7 +108,7 @@ const SecondaryImages = styled.img`
 
 const HorizontalLine = styled.div`
     background-color: #F78B22;
-    height: 2px;
+    height: 4px;
     width: 100px;
     margin-left: 4%;
 `
