@@ -13,14 +13,14 @@ const About = () => {
                         <HorizontalLine></HorizontalLine>
                     </AboutUsHeader>
                     <Paragraphs>At Citrus Cafe you will enjoy our great family atmosphere while you eat your freshly made meal. Our family friendly restaurant combines great food with good fun to give your family the outing you all need. We have several...</Paragraphs>
-                    <Button>Read More</Button>
+                    <button className="button">Read More</button>
                 </Section1>
                 
                 <Section2>
                     <SecondaryText>
                         <Header>Title</Header>
                         <Paragraphs>Here is some information about some random title. It is undetermined but I know this content is going to be fire no doubt! Looking at all this food makes me perpetually hungry!</Paragraphs>
-                        <Button>VIEW MENU</Button>
+                        <button className="button">VIEW MENU</button>
                     </SecondaryText>
                     <SecondaryImages src={"https://images.unsplash.com/photo-1486665384220-2f049536378a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"} alt="more food"/>
                 </Section2>
@@ -30,7 +30,7 @@ const About = () => {
                     <SecondaryText>
                         <Header>Title</Header>
                         <Paragraphs>Some more amazing content that will blow your socks off. This website is going to be straight fire homie. All of these food pics will drive sales up!</Paragraphs>
-                        <Button>View Menu</Button>
+                        <button className="button">View Menu</button>
                     </SecondaryText>
                 </Section3>
             </SecondaryWrapper>
@@ -64,16 +64,6 @@ const Header = styled.h3`
 
 const Paragraphs = styled.p`
     font-weight: 400;
-`
-
-const Button = styled.button`
-    background: black;
-    border: none;
-    color: white;
-    height: 48px;
-    width: 144px;
-    box-shadow: 5px 5px white, 5px 5px 0 1.5px black;
-    margin: 1rem 0;
 `
 
 const Section1 = styled.div`
