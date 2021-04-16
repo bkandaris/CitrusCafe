@@ -74,6 +74,7 @@ const HorizontalLine = styled.div`
     margin-left: 4%;
 `
 const SliderHeader = styled.div`
+    font-size: 2rem;
     display: flex;
     align-items: center;
 `
