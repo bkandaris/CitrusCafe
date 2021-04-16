@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CitrusLogo from '../Assets/CitrusLogo.svg';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,23 +9,27 @@ const Footer = () => {
             <SecondaryWrapper>
                 <TopFooter>
                     <img src={CitrusLogo} alt={"Citrus Logo"} />
-                    <FacebookIcon style={{ color: "white" }} />
                 </TopFooter>
                 <MiddleFooter>
-                    <div>
-                        links
-                    </div>
-                    <div>
-                        address
-                    </div>
+                    <LinkWrapper>
+                        <Link className="footer_link" to="/">Home</Link>
+                        <Link className="footer_link" to="/contact" >Contact</Link>
+                        <Link className="footer_link" to="/menus">Menus</Link>
+                        <Link className="footer_link" to="/about">About</Link>
+                    </LinkWrapper>
+                    <ContactWrapper>
+                        <address className="footer_info">208 S. Main St, Janesville, WI</address>
+                        <phone className="footer_info">Phone: 608-754-9006 </phone>
+                        <email className="footer_info">Email: info@citruscafe208.com</email>
+                    </ContactWrapper>
                 </MiddleFooter>
                 <BottomFooter>
-                    <div>
-                        Hours
-                    </div>
-                    <div>
-                        Ilyris Media
-                    </div>
+                    <p>
+                        Open Daily:   Monday 6AM - Sunday 3PM
+                    </p>
+                    <Developers>
+                        Design and Development by: <span className="media">Ilyris Media</span>
+                    </Developers>
                 </BottomFooter>
             </SecondaryWrapper>
         </Wrapper>
@@ -47,6 +51,20 @@ const SecondaryWrapper = styled.div`
     width: 85%;
 `
 
+const LinkWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border-right: 4px solid white;
+`
+
+const ContactWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+`
+
 const TopFooter = styled.div`
     display: flex;
     justify-content: space-between;
@@ -62,4 +80,10 @@ const MiddleFooter = styled.div`
 
 const BottomFooter = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
+const Developers = styled.p`
+    font-size: .9rem;
+    margin-top: 40px;
 `
