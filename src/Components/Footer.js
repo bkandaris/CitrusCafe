@@ -40,7 +40,7 @@ export default Footer;
 
 const Wrapper = styled.div`
     margin-top: 100px;  
-    background: #868686;
+    background: #636363;
     color: white;
     height: 500px;
     width: 100%;
