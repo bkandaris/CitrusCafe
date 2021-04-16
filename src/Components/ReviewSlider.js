@@ -27,7 +27,7 @@ const ReviewSlider = () => {
             setSlider(0)
         }
         console.log(slider)
-    }, 5000)
+    }, 15000)
 
     return (
         <Wrapper>
@@ -47,7 +47,7 @@ const ReviewSlider = () => {
                 <ReviewerWrapper>
                     <HorizontalLine></HorizontalLine>
                     <VerticalGrey></VerticalGrey>
-                    <p>{Reviews[slider].Name}</p>
+                    <Reviewer>{Reviews[slider].Name}</Reviewer>
                 </ReviewerWrapper>
                 <CircleWrapper>
                     <div className={ slider === 0 ? "circle_orange": "circle"}></div>
@@ -87,6 +87,7 @@ const QuoteWrapper = styled.div`
 
 const CustomerQuote = styled.p`
     padding: 2.5rem;
+    font-size: 1.2rem;
 `
 
 const VerticalGrey = styled.div`
@@ -116,4 +117,8 @@ const CircleWrapper = styled.div`
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
+`
+
+const Reviewer = styled.p`
+    font-size: 1.2rem;
 `

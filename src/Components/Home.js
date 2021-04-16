@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ReviewSlider from './ReviewSlider';
 
-const About = () => {
+const Home = () => {
     return (
         <Wrapper>
             <HeaderImg src={"https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"} alt="food pic" />
@@ -39,7 +39,7 @@ const About = () => {
     )
 }
 
-export default About;
+export default Home;
 // Main and Secondary Wrapper
 const Wrapper = styled.div`
     width: 95%;
