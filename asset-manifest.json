@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CitrusCafe/static/css/main.317a7fb5.chunk.css",
-    "main.js": "/CitrusCafe/static/js/main.afb8a865.chunk.js",
-    "main.js.map": "/CitrusCafe/static/js/main.afb8a865.chunk.js.map",
+    "main.js": "/CitrusCafe/static/js/main.d6b5a267.chunk.js",
+    "main.js.map": "/CitrusCafe/static/js/main.d6b5a267.chunk.js.map",
     "runtime-main.js": "/CitrusCafe/static/js/runtime-main.d03c9dee.js",
     "runtime-main.js.map": "/CitrusCafe/static/js/runtime-main.d03c9dee.js.map",
     "static/js/2.072c5f4b.chunk.js": "/CitrusCafe/static/js/2.072c5f4b.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.d03c9dee.js",
     "static/js/2.072c5f4b.chunk.js",
     "static/css/main.317a7fb5.chunk.css",
-    "static/js/main.afb8a865.chunk.js"
+    "static/js/main.d6b5a267.chunk.js"
   ]
 }
