@@ -19,6 +19,7 @@ a:hover {
 
 .quote_icon {
   color: lightgrey;
+  font-size: 5rem !important;
 }
 
 .rotate-180 {
@@ -31,16 +32,16 @@ a:hover {
 
 .circle {
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   background: grey;
   margin: 0 1rem;
 }
 
 .circle_orange {
   border-radius: 100%;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   background: orange;
   margin: 0 1rem;
 }
@@ -48,16 +49,6 @@ a:hover {
 .facebook {
   color: white;
 }
-
-/* .button {
-  background: black;
-  border: none;
-  color: white;
-  height: 48px;
-  width: 144px;
-  box-shadow: 5px 5px white, 5px 5px 0 1.5px black;
-  margin: 1rem 0;
-} */
 
 .button {
   margin: 1rem 0;

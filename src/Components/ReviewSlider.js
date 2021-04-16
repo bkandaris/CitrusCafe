@@ -37,24 +37,24 @@ const ReviewSlider = () => {
             </SliderHeader>
             <QuoteWrapper>
                 <FormatQuoteIcon className="quote_icon rotate-180"
-                fontSize={"large"}
                 />
                 <CustomerQuote>{Reviews[slider].Review}</CustomerQuote>
                 <FormatQuoteIcon
                 className="quote_icon"
-                fontSize={"large"}
                  />
             </QuoteWrapper>
-            <ReviewerWrapper>
-                <HorizontalLine></HorizontalLine>
-                <VerticalGrey></VerticalGrey>
-                <p>{Reviews[slider].Name}</p>
-            </ReviewerWrapper>
-            <CircleWrapper>
-                <div className={ slider === 0 ? "circle_orange": "circle"}></div>
-                <div className={ slider === 1 ? "circle_orange": "circle"}></div>
-                <div className={ slider === 2 ? "circle_orange": "circle"}></div>
-            </CircleWrapper>
+            <ReviewCircleWrapper>
+                <ReviewerWrapper>
+                    <HorizontalLine></HorizontalLine>
+                    <VerticalGrey></VerticalGrey>
+                    <p>{Reviews[slider].Name}</p>
+                </ReviewerWrapper>
+                <CircleWrapper>
+                    <div className={ slider === 0 ? "circle_orange": "circle"}></div>
+                    <div className={ slider === 1 ? "circle_orange": "circle"}></div>
+                    <div className={ slider === 2 ? "circle_orange": "circle"}></div>
+                </CircleWrapper>
+            </ReviewCircleWrapper>
         </Wrapper>
     )
 }
@@ -62,7 +62,7 @@ const ReviewSlider = () => {
 export default ReviewSlider;
 
 const Wrapper = styled.div`
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 150px;
 `
@@ -77,6 +77,7 @@ const SliderHeader = styled.div`
     font-size: 2rem;
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 `
 
 const QuoteWrapper = styled.div`
@@ -85,7 +86,7 @@ const QuoteWrapper = styled.div`
 `
 
 const CustomerQuote = styled.p`
-    padding: 1rem;
+    padding: 2.5rem;
 `
 
 const VerticalGrey = styled.div`
@@ -95,7 +96,16 @@ const VerticalGrey = styled.div`
     margin: 0 1.5rem;
 `
 
+const ReviewCircleWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`
+
 const ReviewerWrapper = styled.div`
+    width: 25%;
+    margin-right: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
