@@ -51,9 +51,9 @@ const SecondaryWrapper = styled.div`
 `    
 
 const HeaderImg = styled.img`
-    min-height: 100%;
+    max-height: 60vh;
     min-width: 100%;
-    max-width: 100%;
+    object-fit: cover;
 `
 
 const Header = styled.h3`

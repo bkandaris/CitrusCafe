@@ -11,7 +11,7 @@ const Navbar = () => {
                 <Img src={CitrusLogo} alt={"Citrus Logo"} />
             </Link>
             <Div>
-                <A href="tel:6087549006"><PhoneIcon fontSize={'inherit'} className="phone_icon" />(608) 754-9006</A>
+                <A href="tel:6087549006"><PhoneIcon fontSize={'medium'} className="phone_icon" />(608) 754-9006</A>
                 <LinksDiv>
                     <Link className="nav_link" to="/">Home</Link>
                     <Link className="nav_link" to="/contact" >Contact</Link>
@@ -61,6 +61,7 @@ const A = styled.div`
 const LinksDiv = styled.div`
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5%;
     font-weight: 400;
 `
 
