@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const ReviewSlider = () => {
     const [slider, setSlider ] = useState(0);
+    const [moving, setMoving ] = useState(true);
 
     const Reviews = [
         {
@@ -19,15 +20,16 @@ const ReviewSlider = () => {
             Name: "Candy M."
         },
     ]
-
-    setTimeout(()=> {
-        if (slider <= 1) {
-            setSlider(slider + 1);
-        } else {
-            setSlider(0)
-        }
-        console.log(slider)
-    }, 15000)
+    if(moving) {
+        setTimeout(()=> {
+            if (slider <= 1) {
+                setSlider(slider + 1);
+            } else {
+                setSlider(0)
+            }
+            console.log(slider)
+        }, 15000)
+    }
 
     return (
         <Wrapper>
@@ -50,9 +52,17 @@ const ReviewSlider = () => {
                     <Reviewer>{Reviews[slider].Name}</Reviewer>
                 </ReviewerWrapper>
                 <CircleWrapper>
-                    <div className={ slider === 0 ? "circle_orange": "circle"}></div>
-                    <div className={ slider === 1 ? "circle_orange": "circle"}></div>
-                    <div className={ slider === 2 ? "circle_orange": "circle"}></div>
+                    <div className={ slider === 0 ? "circle_orange": "circle"}
+                    onClick={()=>{setSlider(0);
+                    setMoving(false);}}
+                    ></div>
+                    <div className={ slider === 1 ? "circle_orange": "circle"}
+                    onClick={()=>{setSlider(1);
+                        setMoving(false);}
+                    }></div>
+                    <div className={ slider === 2 ? "circle_orange": "circle"}
+                    onClick={()=>{setSlider(2);
+                        setMoving(false);}}></div>
                 </CircleWrapper>
             </ReviewCircleWrapper>
         </Wrapper>
@@ -106,7 +116,6 @@ const ReviewCircleWrapper = styled.div`
 
 const ReviewerWrapper = styled.div`
     width: 25%;
-    margin-right: 140px;
     display: flex;
     align-items: center;
     justify-content: center;

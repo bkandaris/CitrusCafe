@@ -42,7 +42,7 @@ const Home = () => {
 export default Home;
 // Main and Secondary Wrapper
 const Wrapper = styled.div`
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 `
 const SecondaryWrapper = styled.div`
