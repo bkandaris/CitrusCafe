@@ -96,6 +96,7 @@ const QuoteWrapper = styled.div`
 `
 
 const CustomerQuote = styled.p`
+    animation: fadein 2s;
     padding: 2.5rem;
     font-size: 1.2rem;
 `
