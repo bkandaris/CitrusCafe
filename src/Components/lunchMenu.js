@@ -1,74 +1,103 @@
 const Lunch = [
-    {LunchSpecialties: [
-        {Featured:
-            {
-                title: "Featured Title",
-                price: "$9.99",
-                description: "Description about the lunch product to display to the customer",
-                picture: "url to pic"
-            }
+    {menuTitle: "Lunch",
+    // need an array of objects
+    subMenus: [
+        {
+            subMenuTitle: "Lunch Specialties",
+            featuredPic: "someurl",
+            featuredTitle: "Featured Title",
+            featuredDescription: "our featured egg plate description",
+            featuredPrice: "$11.99",
+            menuItems: [
+                {
+                    itemTitle: "Green Eggs and Ham",
+                    itemDescription: "Spinach, eggs, ham, and cheddar cheese scrambled",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Country Platter",
+                    itemDescription: "Bacon, eggs, ham, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Breakfast Starter",
+                    itemDescription: "Eggs, toast, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Green Eggs and Ham",
+                    itemDescription: "Spinach, eggs, ham, and cheddar cheese scrambled",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Country Platter",
+                    itemDescription: "Bacon, eggs, ham, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Breakfast Starter",
+                    itemDescription: "Eggs, toast, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Green Eggs and Ham",
+                    itemDescription: "Spinach, eggs, ham, and cheddar cheese scrambled",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Country Platter",
+                    itemDescription: "Bacon, eggs, ham, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Breakfast Starter",
+                    itemDescription: "Eggs, toast, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Green Eggs and Ham",
+                    itemDescription: "Spinach, eggs, ham, and cheddar cheese scrambled",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Country Platter",
+                    itemDescription: "Bacon, eggs, ham, and hashbrowns",
+                    itemPrice: "$8.99"
+                },
+                {
+                    itemTitle: "Breakfast Starter",
+                    itemDescription: "Eggs, toast, and hashbrowns",
+                    itemPrice: "$8.99"
+                }
+            ]
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Omellettes"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Breakfast Slides"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Rise & Shine Eye Openers"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Biscuits"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Pancakes"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Waffles"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "French Toast"
         },
         {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
+            subMenuTitle: "Healthy Choices"
         },
-        {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
-        },
-        {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
-        },
-        {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
-        },
-        {
-            title: "Placeholder Title",
-            price: "$9.99",
-            description: "Description about the lunch product to display to the customer"
-        }
-    ]},
+    ]
+},
+ 
 ]
 
 export default Lunch;
